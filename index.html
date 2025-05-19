@@ -1,38 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking.com</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css"  >   
-           
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <header class="header">
         <!-- Navigation Bar -->
         <div class="top-nav">
             <a href="#" class="logo">Booking.com</a>
-            
+
             <div class="nav-right">
-                
+
                 <div class="c-indicator">
                     <div class="flag"></div>
                     <span class="c-code">IND</span>
                 </div>
-                
+
                 <div class="help-icon">
                     <i class="far fa-question-circle"></i>
                 </div>
-                
+
                 <div class="language-selector">
                     <select>
                         <option>English (IN)</option>
-                        <option>Hindi</option>
+                        <option>हिंदी</option>
                     </select>
                 </div>
-                
+
                 <div class="user-actions">
                     <a href="#" class="user-action">List your property</a>
                     <a href="#" class="user-action">Register</a>
@@ -40,12 +41,12 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Main Navigation Bar -->
         <nav class="main-nav">
             <ul class="nav-list">
                 <li class="nav-item active">
-                   
+
                     <a href="#" class="nav-link">
                         <i class="fas fa-bed nav-icon"></i>
                         <span>Stays</span>
@@ -83,37 +84,121 @@
             </ul>
         </nav>
     </header>
+
+<main>
+    <section class="hero-section">
+        <h1>Find your next stay</h1>
+        <p>Search deals on hotels, homes, and much more...</p>
+    </section>
+
+    <section class="search-box">
+        <div class="in">
+            <input type="text" placeholder="Where are you going?">
+        </div>
+        <div class="in">
+            <input type="date" placeholder="Check-in">
+        </div>
+        <div class="in">
+            <input type="date" placeholder="Check-out">
+        </div>
+        <select>
+            <div class="in">
+                <option>1 adult · 0 children · 1 room</option>
+                <option>2 adults · 0 children · 1 room</option>
+                <option>2 adults · 2 children · 1 room</option>
+            </div>
+        </select>
+        <div class="in">
+            <button>Search</button>
+        </div>
+    </section>
+
+    <section class="checkbox">
+
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">I'am looking for flights</label>
+
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">I'am looking for an entire home or apartment</label>
+
+    </section>
+
     
+        <section class="offers">
+            <h2>Offers</h2>
+            <p>Promotions, deals and special offers for you</p><br>
+            <div class="off">
+                <div class="offer-box1">
+                    <img src="image 1.jpg" alt="offer1">
+                    <div>
+                        <h3>Quick escape, quality time</h3>
+                        <p>Save up to 20% with a Getaway Deal</p><br>
+                        <button>Save on stays</button>
+                    </div>
+                </div>
 
-  <section class="hero-section">
-    <h1>Find your next stay</h1>
-    <p>Search deals on hotels, homes, and much more...</p>
-  </section>
+                <div class="offer-box2">
+                    <img src="image 2.jpg" alt="offer 2">
+                    <div>
+                        <h6>New members-only rewards for you</h6>
+                        <h3>Genius flight price alerts</h3>
+                        <p>Save on flights with price alerts in your pocket, Set up an alert to get notified when prices
+                            drop.</p><br>
+                        <button>Get the app</button>
+                    </div>
 
-  <section class="search-box">
-    <div class="in">
-    <input type="text" placeholder="Where are you going?">
-    </div>
-    <div class="in">
-    <input type="date" placeholder="Check-in">
-    </div>
-    <div class="in">
-    <input type="date" placeholder="Check-out">
-    </div>
-    <select>
-      <div class="in">
-      <option>1 adult · 0 children · 1 room</option>
-      <option>2 adults · 0 children · 1 room</option>
-      <option>2 adults · 2 children · 1 room</option>
-      </div>
-    </select>
-    <div class="in">
-    <button>Search</button>
-    </div>
-  </section>
+                </div>
+            </div>
+        </section>
 
-    <main>
-        
+        <section>
+            
+            <div class="container">
+           <h1>Trending destinations</h1>
+            <p class="subtitle">Most popular choices for travelers from India</p>
+    
+    <!-- Upper section with two images -->
+    <div class="trending trending-upper">
+        <div class="trend" style="background-image: url('desti 1.jpg')">
+            <div class="title">
+                New Delhi
+                <span class="flag"></span>
+            </div>
+        </div>
+        <div class="trend" style="background-image: url('desti 2.jpg')">
+            <div class="title">
+                Bangalore
+                <span class="flag"></span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Lower section with three images -->
+    <div class="trending trending-lower">
+        <div class="trend" style="background-image: url('desti 3.jpg')">
+            <div class="title">
+                Mumbai
+                <span class="flag"></span>
+            </div>
+        </div>
+        <div class="trend" style="background-image: url('desti 4.webp')">
+            <div class="title">
+                Chennai
+                <span class="flag"></span>
+            </div>
+        </div>
+        <div class="trend" style="background-image: url('desti 5.webp')">
+            <div class="title">
+                Varanasi
+                <span class="flag"></span>
+            </div>
+        </div>
+    </div>
+</div>          
+         </section> 
+
+
     </main>
 </body>
+
 </html>

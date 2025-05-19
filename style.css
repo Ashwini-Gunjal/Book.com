@@ -1,4 +1,4 @@
-           /* Base Styles */
+       /* Base Styles */
         :root {
             --primary-blue: #003580;
             --secondary-blue: #0071c2;
@@ -16,6 +16,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'BlinkMacSystemFont', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            
         }
         
         body {
@@ -264,3 +265,250 @@
         border:2px solid #FF9933;
     }
 
+    .checkbox{
+        margin-left: 100px;
+    }
+    
+    .offers {
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+    .off{
+        display: flex;
+    }
+
+    .offer-box1 img{
+        width:150px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .offer-box2 img{
+        width:150px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .offers h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+     .offer-box1 {
+      width: 50%;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .offer-box2 {
+      color: white;
+      width: 50%;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      background-color: var(--primary-blue);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+    .offer-box1, .offer-box2{
+        display: flex;
+    }
+
+    .offer-box h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .offer-box p {
+      color: var(--text-light);
+    }
+     .offers button{
+        background-color: var(--secondary-blue);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+.container{
+        margin: 0px 100px 0px 100px;
+
+}
+
+.trending {
+    display: grid;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.trending-upper {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.trending-lower {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.trend {
+    position: relative;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.title {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 20px;
+    height: 14px;
+    margin-left: 8px;
+    vertical-align: middle;
+    background: linear-gradient(
+        to bottom,
+        var(--orange) 33%,
+        var(--white) 33% 66%,
+        var(--green) 66%
+    );
+    border-radius: 2px;
+    position: relative;
+}
+
+.flag::after {
+    content: "•";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--navy-blue);
+    font-size: 6px;
+    line-height: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .top-nav, .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .nav-right {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .offers {
+        padding: 40px 20px;
+    }
+
+    .off {
+        flex-direction: column;
+    }
+
+    .offer-box1,
+    .offer-box2 {
+        width: 100%;
+    }
+
+    .container {
+        margin: 0 20px;
+    }
+
+    .trending-upper {
+        grid-template-columns: 1fr;
+    }
+
+    .trending-lower {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .trend {
+        height: 180px;
+    }
+
+    .checkbox {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .language-selector select {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .user-action {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .search-box input,
+    .search-box select,
+    .search-box button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .search-box {
+        padding: 10px;
+    }
+
+    .offers h2 {
+        font-size: 20px;
+    }
+
+    .trending-lower {
+        grid-template-columns: 1fr;
+    }
+
+    .trend {
+        height: 150px;
+    }
+}
